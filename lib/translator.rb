@@ -1,7 +1,7 @@
 require 'pry'
 require 'yaml'
 emoticons_path = YAML.load(File.read("./lib/emoticons.yml"))
-puts emoticons_path
+
   binding.pry
 def load_library(emoticons_path)
 
