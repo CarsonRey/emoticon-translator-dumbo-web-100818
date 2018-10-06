@@ -4,10 +4,12 @@ def load_library(emoticons)
   require 'yaml'
   emoticons = YAML.load_file("./lib/emoticons.yml")
   emoticons
+  binding.pry
 end
 
-def get_japanese_emoticon(emoticons, emo = "=D")
+def get_japanese_emoticon(emoticons, emo)
   load_library(emoticons)
+  if emoticons["get_emoticon"].keys.include?(emo)
    emoticons["get_emoticon"].each do |key, value|
       if emo == key
         value
@@ -19,12 +21,9 @@ end
 
 def get_english_meaning(emoticons, emo)
   load_library(emoticons)
-  emoticons["get_meaning"].each do |key, value|
-    binding.pry
-    if emoticons.include?(emo)
+  if emoticons.include?(emo)
     
-    else
-      "Sorry, that emoticon was not found"
-    end 
+  else
+    "Sorry, that emoticon was not found"
   end
 end
