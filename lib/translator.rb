@@ -12,7 +12,7 @@ emoticons.each do |word, emoticon_array|
         emo_hash[get_emoticon] = {emoticon_array[0] => emoticon_array[1] }
       end
     end
-    
+    emo_hash
 end
 
 def get_japanese_emoticon(emoticons_path)
