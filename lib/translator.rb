@@ -1,6 +1,6 @@
 require 'pry'
 require 'yaml'
-emoticons_path = YAML.load_file("./lib/emoticons.yml")
+emoticons_path = YAML.load_file("../lib/emoticons.yml")
 puts emoticons_path
 
 def load_library(emoticons_path)
