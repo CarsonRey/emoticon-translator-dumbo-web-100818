@@ -20,10 +20,14 @@ def get_japanese_emoticon(emoticons, emo)
 end
 
 def get_english_meaning(emoticons, emo)
-  load_library(emoticons)
-  if emoticons.include?(emo)
-    
-  else
-    "Sorry, that emoticon was not found"
-  end
+   search = load_library(emoticons)["get_meaning"]
+ if search.keys.include?(emo)
+    search.each do |key, value|
+    if emo == key
+      return value
+    end
+    end
+ else
+     "Sorry, that emoticon was not found"
+ end
 end
