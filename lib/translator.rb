@@ -4,6 +4,7 @@ emoticons_path = YAML.load(File.read("./lib/emoticons.yml"))
 puts emoticons_path
 
 def load_library(emoticons_path)
+  binding.pry
   emo_hash = {}
 
 
