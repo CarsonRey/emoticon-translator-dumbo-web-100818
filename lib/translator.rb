@@ -13,6 +13,7 @@ def get_japanese_emoticon(emoticons, emo)
    
       if emo == value
         key
+      end
      end
   else
     "Sorry, that emoticon was not found"
