@@ -5,9 +5,6 @@ require 'pry'
 def load_library(emoticons)
 require 'yaml'
 emo_hash = {}
-
-
-    emo_hash
 end
 
 def get_japanese_emoticon(emoticons_path)
