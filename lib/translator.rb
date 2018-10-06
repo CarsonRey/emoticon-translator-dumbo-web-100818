@@ -7,9 +7,8 @@ require 'yaml'
 emoticons = YAML.load_file("./lib/emoticons.yml")
 emo_hash = {}
 emoticons.each do |word, emo_array|
-  emo_array each do |emoticon|
     binding.pry
-  end
+
 end
 
 end
