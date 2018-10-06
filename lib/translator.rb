@@ -1,7 +1,5 @@
 require 'pry'
 
-
-
 def load_library(emoticons)
   require 'yaml'
   emoticons = YAML.load_file("./lib/emoticons.yml")
@@ -12,6 +10,7 @@ def get_japanese_emoticon(emoticons, emo)
   load_library(emoticons)
   if emoticons.include?(emo)
    emoticons[get_meaning].each do |key, value|
+     binding.pry
      key if emo == value
    end
   else
