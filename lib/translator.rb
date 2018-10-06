@@ -12,7 +12,7 @@ def get_japanese_emoticon(emoticons, emo)
    emoticons[get_meaning].each do |key, value|
      binding.pry
      key if emo == value
-   end
+     end
   else
     "Sorry, that emoticon was not found"
   end
