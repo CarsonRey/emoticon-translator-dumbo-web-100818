@@ -6,7 +6,7 @@ def load_library(emoticons)
   emoticons
 end
 
-def get_japanese_emoticon(emoticons, emo)
+def get_japanese_emoticon(emoticons, emo:)
   load_library(emoticons)
   if emoticons["get_emoticon"].keys.include?(emo)
     emoticons["get_emoticon"].each do |key, value|
