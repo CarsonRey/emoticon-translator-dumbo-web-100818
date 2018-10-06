@@ -9,7 +9,7 @@ emo_hash = {}
 
 end
 
-def get_japanese_emoticon(emoticons_path)
+def get_japanese_emoticon(emoticons)
   binding.pry
 end
 
