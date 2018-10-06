@@ -9,14 +9,12 @@ end
 def get_japanese_emoticon(emoticons, emo)
  search = load_library(emoticons)["get_emoticon"].keys
  if search.include?(emo)
-  search.each do |key, value|
-   if emo == key
-     
+    search.each do |key, value|
+    value if emo == key
     end
-   else
+ else
      "Sorry, that emoticon was not found"
-   end
-  end
+ end
 end
 
 def get_english_meaning(emoticons, emo)
