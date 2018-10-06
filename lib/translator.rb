@@ -19,9 +19,12 @@ end
 
 def get_english_meaning(emoticons, emo)
   load_library(emoticons)
-  if emoticons.include?(emo)
+  emoticons["get_meaning"].each do |key, value|
     
-  else
-    "Sorry, that emoticon was not found"
+    if emoticons.include?(emo
+    
+    else
+      "Sorry, that emoticon was not found"
+    end 
   end
 end
