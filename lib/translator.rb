@@ -10,9 +10,11 @@ end
 
 def get_japanese_emoticon(emoticons, emo)
   load_library(emoticons)
-  if 
+  binding.pry
+  if emoticons.keys.include?(emo)
+    
   else
-    ""
+    "Sorry, that emoticon was not found"
   end
 end
 
