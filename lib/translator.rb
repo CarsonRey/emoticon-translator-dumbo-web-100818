@@ -9,7 +9,6 @@ emo_hash = {}
 
 
 
-end
 
 end
 
