@@ -7,8 +7,8 @@ def load_library(emoticons)
 end
 
 def get_japanese_emoticon(emoticons, emo)
- search = load_library(emoticons)["get_emoticon"].keys
- if search.include?(emo)
+ search = load_library(emoticons)["get_emoticon"]
+ if search.keys.include?(emo)
     search.each do |key, value|
     if emo == key
       value
