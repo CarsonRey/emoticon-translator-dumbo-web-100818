@@ -11,7 +11,9 @@ end
 def get_japanese_emoticon(emoticons, emo)
   load_library(emoticons)
   if emoticons.include?(emo)
-    binding.pry
+   emoticons[get_meaning].each do |key, value|
+     key if emo == value
+   end
   else
     "Sorry, that emoticon was not found"
   end
@@ -20,7 +22,7 @@ end
 def get_english_meaning(emoticons, emo)
   load_library(emoticons)
   if emoticons.include?(emo)
-    binding.pry
+    
   else
     "Sorry, that emoticon was not found"
   end
