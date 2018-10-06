@@ -19,4 +19,9 @@ end
 
 def get_english_meaning(emoticons, emo)
   load_library(emoticons)
+  if emoticons.include?(emo)
+    binding.pry
+  else
+    "Sorry, that emoticon was not found"
+  end
 end
