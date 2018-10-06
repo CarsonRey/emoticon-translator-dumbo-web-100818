@@ -7,7 +7,7 @@ def load_library(emoticons)
 end
 
 def get_japanese_emoticon(emoticons, emo)
- load_library(emoticons)["get_emoticon"].each do |key, value|
+ load_library(emoticons)["get_emoticon"].collect do |key, value|
    if emo == key
      value
    else
