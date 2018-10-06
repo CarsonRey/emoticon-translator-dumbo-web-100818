@@ -6,8 +6,8 @@ def load_library(emoticons)
 require 'yaml'
 emoticons = YAML.load_file("./lib/emoticons.yml")
 emo_hash = {}
-emoticons.each do |word, emo_array|
-    binding.pry
+
+
 
 end
 
