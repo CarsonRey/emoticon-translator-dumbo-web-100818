@@ -9,9 +9,9 @@ end
 def get_japanese_emoticon(emoticons, emo)
  search = load_library(emoticons)["get_emoticon"]
  if search.keys.include?(emo)
-    search.collect do |key, value|
+    search.each do |key, value|
     if emo == key
-      value
+      return value
     end
     end
  else
