@@ -10,8 +10,7 @@ end
 def get_japanese_emoticon(emoticons, emo)
   load_library(emoticons)
   if emoticons.include?(emo)
-   emoticons["get_meaning"].collect do |key, value|
-
+   emoticons["get_emoticon"].each do |key, value|
       if emo == value
         key
       end
