@@ -5,7 +5,8 @@ require 'pry'
 def load_library(emoticons)
 require 'yaml'
 emo_hash = {}
-
+ emo_hash[get_meaning] = {}
+ emo_hash[get_emoticon] = {}
 emoticons = YAML.load_file("./lib/emoticons.yml")
 emoticons.each do |word, emoticon_array|
       emoticon_array.each do |emoticon|
